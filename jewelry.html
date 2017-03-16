@@ -1,0 +1,56 @@
+---
+layout: page
+title: Jewelry
+permalink: /jewelry/
+order: 2
+images:
+  - image_path: /assets/jewelry/e2.jpeg
+    title: book and binocular posts
+  - image_path: /assets/jewelry/e1.jpeg
+    title: white tailed-kite
+  - image_path: /assets/jewelry/e3.jpeg
+    title: brown creeper
+  - image_path: /assets/jewelry/e5.jpeg
+    title: barn owl
+  - image_path: /assets/jewelry/e6.jpeg
+    title:  townsend's warbler
+  - image_path: /assets/jewelry/e7.jpeg
+    title:  snowy egret
+  - image_path: /assets/jewelry/e8.jpeg
+    title:  acorn woodpecker
+  - image_path: /assets/jewelry/e9.jpeg
+    title:  snowy plover
+  - image_path: /assets/jewelry/e10.jpeg
+    title:  allen's hummingbird
+  - image_path: /assets/jewelry/e11.jpeg
+    title:  cedar waxwing
+  - image_path: /assets/jewelry/e13.jpeg
+    title:  spotted sandpiper
+  - image_path: /assets/jewelry/e14.jpeg
+    title:  northern flicker
+---
+<div class="row page-top">
+  <div class="col-md-12">
+    <div class="text-center">
+      <h3 class="page-title text-center">About the Jewelry</h3>
+      <ul>
+        <li class="page-subtitle">sterling silver</li>
+        <li class="page-subtitle">hand drawn</li>
+        <li class="page-subtitle">lightweight plastic</li>
+        <li class="page-subtitle">dangling kidney wires
+        <li class="page-subtitle">sterling silver posts</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  {% for image in page.images %}
+    <div class="col-md-2 col-sm-2">
+      <div class="gallery">
+        <img class="gallery-image img-responsive" src="{{ image.image_path }}" alt="{{ image.title}}"/>
+        <h4 class="gallery-title text-center">{{ image.title }}</h4>
+      </div>
+    </div>
+  {% endfor %}
+</div>

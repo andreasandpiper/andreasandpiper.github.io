@@ -1,0 +1,85 @@
+---
+layout: page
+title: Hats
+permalink: /hats/
+order: 1
+images:
+
+  - image_path: /images/hats/5panel/condor.JPG
+    title: condor hat
+  - image_path: /images/hats/5panel/osprey.JPG
+    title: osprey hat
+  - image_path: /images/hats/beanie/kf2_beanie.jpeg
+    title: kingfisher beanie
+  - image_path: /images/hats/5panel/burrowing_5.jpeg
+    title: burrowing owl hat
+  - image_path: /images/hats/5panel/quail_5.jpeg
+    title: quail hat
+  - image_path: /images/hats/5panel/osprey2.JPG
+    title: osprey hat
+  - image_path: /images/hats/trucker/pelican.png
+    title: pelican hat
+  - image_path: /images/hats/5panel/peregrine.JPG
+    title: peregrine hat
+  - image_path: /images/hats/5panel/plover.JPG
+    title:  plover hat
+  - image_path: /images/hats/trucker/poisonoak.JPG
+    title:  poison oak hat
+  - image_path: /images/hats/5panel/quail.JPG
+    title: quail hat
+  - image_path: /images/hats/trucker/robin.JPG
+    title: robin hat
+  - image_path: /images/hats/trucker/wrentit.JPG
+    title:  wrentit hat
+  - image_path: /images/hats/5panel/tanager.JPG
+    title: tanager hat
+  - image_path: /images/hats/baseball/snowyowl.JPG
+    title: snowy owl hat
+  - image_path: /images/hats/5panel/chickadee_5.jpeg
+    title:  chickadee hat
+  - image_path: /images/hats/beanie/chickadee_beanie.jpeg
+    title:  chickadee beanie
+  - image_path: /images/hats/baseball/condor_b.jpeg
+    title: condor hat
+  - image_path: /images/hats/5panel/kestrel_5.jpeg
+    title: kestrel hat
+  - image_path: /images/hats/beanie/kf_beanie.jpeg
+    title:  kingfisher beanie
+  - image_path: /images/hats/beanie/pelican_beanie.jpeg
+    title:  pelican beanie
+  - image_path: /images/hats/trucker/oystercatcher_t.jpeg
+    title: oystercatcher hat
+  - image_path: /images/hats/baseball/pelican_b.jpeg
+    title: pelican hat
+  - image_path: /images/hats/trucker/pelican_t.jpeg
+    title: pelican hat
+  - image_path: /images/hats/beanie/plover_beanie.jpeg
+    title: plover beanie
+  - image_path: /images/hats/beanie/quail_beanie.jpeg
+    title:  quail beanie
+---
+<div class="row page-top">
+  <div class="col-md-12">
+    <div class="text-center">
+      <h3 class="page-title text-center">About the Hats</h3>
+      <ul>
+        <li class="page-subtitle">styles: baseball, trucker, 5 panel, beanie</li>
+        <li class="page-subtitle">various hat colors</li>
+        <li class="page-subtitle">heavy-duty applique</li>
+        <li class="page-subtitle">hand cut fabric birds</li>
+        <li class="page-subtitle">machine-wash friendly</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+    {% for image in page.images %}
+      <div class="col-md-2">
+        <div class="gallery">
+          <img class="gallery-image img-responsive" src="{{ image.image_path }}" alt="{{ image.title}}"/>
+          <h4 class="gallery-title text-center">{{ image.title }}</h4>
+        </div>
+    </div>
+    {% endfor %}
+</div>
