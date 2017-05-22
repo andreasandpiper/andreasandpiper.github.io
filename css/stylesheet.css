@@ -175,8 +175,9 @@ a {
 
 
 .site-footer {
+  margin-top: 3em;
   font-size: 20px;
-  padding: 25px;
+  padding: 37px;
   background-color: rgb(217, 217, 212);
 }
 
@@ -186,14 +187,14 @@ a {
 }
 
 .gallery {
-  margin: 1em;
+  margin: 2em;
   height: 12.9em;
 }
 
 .gallery-image {
   margin: auto;
   border: .113em solid black;
-  width: 11em;
+  width: 14em;
   height: auto;
 }
 
