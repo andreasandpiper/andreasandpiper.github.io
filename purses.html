@@ -1,0 +1,47 @@
+---
+layout: page
+title: Purses
+permalink: /purses/
+order: 3
+images:
+  - image_path: /assets/purses/bikepurse.png
+    title: bike purse
+  - image_path: /assets/purses/minisp.JPG
+    title: sandpiper purse
+  - image_path: /assets/purses/leaf.JPG
+    title: fall leaf purse
+  - image_path: /assets/purses/racoonpurse.png
+    title: raccoon purse
+  - image_path: /assets/purses/shroom.JPG
+    title:  mushroom purse
+  - image_path: /assets/purses/yellowpurse.png
+    title:  italian floral purse
+
+---
+
+<div class="row page-top">
+  <div class="col-md-12">
+    <div class="text-center">
+      <h3 class="page-title text-center">About the Purses</h3>
+      <ul>
+        <li class="page-subtitle">Handmade and Original Pattern</li>
+        <li class="page-subtitle">Main Compartment Zipper</li>
+        <li class="page-subtitle">Adjustable Strap</li>
+        <li class="page-subtitle">Inner slide pockets</li>
+        <li class="page-subtitle">Option inner zip pocket</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  {% for image in page.images %}
+    <div class="col-md-3 col-sm-3 col-xs-12">
+      <div class="gallery">
+        <img class="gallery-image img-responsive" src="{{ image.image_path }}" alt="{{ image.title}}"/>
+        <h4 class="gallery-title text-center">{{ image.title }}</h4>
+      </div>
+    </div>
+  {% endfor %}
+</div>
