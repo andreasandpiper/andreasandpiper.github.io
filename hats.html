@@ -5,69 +5,69 @@ permalink: /hats/
 order: 1
 images:
 
-  - image_path: /images/hats/trucker/pelican.png
+  - image_path: /assets/hats/trucker/pelican.png
     title: pelican hat
-  - image_path: /images/hats/trucker/poisonoak.JPG
+  - image_path: /assets/hats/trucker/poisonoak.JPG
     title:  poison oak hat
-  - image_path: /images/hats/5panel/quail_5.jpeg
+  - image_path: /assets/hats/5panel/quail_5.jpeg
     title: quail hat
-  - image_path: /images/hats/5panel/olivecactuswren.jpeg
+  - image_path: /assets/hats/5panel/olivecactuswren.jpeg
     title: cactus wren hat
-  - image_path: /images/hats/5panel/olivejunco.jpeg
+  - image_path: /assets/hats/5panel/olivejunco.jpeg
     title: junco hat
-  - image_path: /images/hats/5panel/khakiperegrine.jpeg
+  - image_path: /assets/hats/5panel/khakiperegrine.jpeg
     title: peregrine falcon hat
-  - image_path: /images/hats/5panel/navytowhee.jpeg
+  - image_path: /assets/hats/5panel/navytowhee.jpeg
     title: spotted towhee hat
-  - image_path: /images/hats/5panel/olivekestrel.jpeg
+  - image_path: /assets/hats/5panel/olivekestrel.jpeg
     title: kestrel hat
-  - image_path: /images/hats/5panel/condor.JPG
+  - image_path: /assets/hats/5panel/condor.JPG
     title: condor hat
-  - image_path: /images/hats/5panel/osprey.JPG
+  - image_path: /assets/hats/5panel/osprey.JPG
     title: osprey hat
-  - image_path: /images/hats/beanie/kf2_beanie.jpeg
+  - image_path: /assets/hats/beanie/kf2_beanie.jpeg
     title: kingfisher beanie
-  - image_path: /images/hats/5panel/burrowing_5.jpeg
+  - image_path: /assets/hats/5panel/burrowing_5.jpeg
     title: burrowing owl hat
-  - image_path: /images/hats/5panel/osprey2.JPG
+  - image_path: /assets/hats/5panel/osprey2.JPG
     title: osprey hat
-  - image_path: /images/hats/5panel/peregrine.JPG
+  - image_path: /assets/hats/5panel/peregrine.JPG
     title: peregrine hat
-  - image_path: /images/hats/5panel/plover.JPG
+  - image_path: /assets/hats/5panel/plover.JPG
     title:  plover hat
-  - image_path: /images/hats/5panel/quail.JPG
+  - image_path: /assets/hats/5panel/quail.JPG
     title: quail hat
-  - image_path: /images/hats/trucker/robin.JPG
+  - image_path: /assets/hats/trucker/robin.JPG
     title: robin hat
-  - image_path: /images/hats/trucker/wrentit.JPG
+  - image_path: /assets/hats/trucker/wrentit.JPG
     title:  wrentit hat
-  - image_path: /images/hats/trucker/pelican_t.jpeg
+  - image_path: /assets/hats/trucker/pelican_t.jpeg
     title: pelican hat
-  - image_path: /images/hats/5panel/tanager.JPG
+  - image_path: /assets/hats/5panel/tanager.JPG
     title: tanager hat
-  - image_path: /images/hats/baseball/snowyowl.JPG
+  - image_path: /assets/hats/baseball/snowyowl.JPG
     title: snowy owl hat
-  - image_path: /images/hats/5panel/chickadee_5.jpeg
+  - image_path: /assets/hats/5panel/chickadee_5.jpeg
     title:  chickadee hat
-  - image_path: /images/hats/beanie/chickadee_beanie.jpeg
+  - image_path: /assets/hats/beanie/chickadee_beanie.jpeg
     title:  chickadee beanie
-  - image_path: /images/hats/baseball/condor_b.jpeg
+  - image_path: /assets/hats/baseball/condor_b.jpeg
     title: condor hat
-  - image_path: /images/hats/5panel/kestrel_5.jpeg
+  - image_path: /assets/hats/5panel/kestrel_5.jpeg
     title: kestrel hat
-  - image_path: /images/hats/beanie/kf_beanie.jpeg
+  - image_path: /assets/hats/beanie/kf_beanie.jpeg
     title:  kingfisher beanie
-  - image_path: /images/hats/beanie/pelican_beanie.jpeg
+  - image_path: /assets/hats/beanie/pelican_beanie.jpeg
     title:  pelican beanie
-  - image_path: /images/hats/trucker/oystercatcher_t.jpeg
+  - image_path: /assets/hats/trucker/oystercatcher_t.jpeg
     title: oystercatcher hat
-  - image_path: /images/hats/baseball/pelican_b.jpeg
+  - image_path: /assets/hats/baseball/pelican_b.jpeg
     title: pelican hat
-  - image_path: /images/hats/beanie/plover_beanie.jpeg
+  - image_path: /assets/hats/beanie/plover_beanie.jpeg
     title: plover beanie
-  - image_path: /images/hats/5panel/blackraccoon.jpeg
+  - image_path: /assets/hats/5panel/blackraccoon.jpeg
     title: raccoon hat
-  - image_path: /images/hats/5panel/blacktowhee.jpeg
+  - image_path: /assets/hats/5panel/blacktowhee.jpeg
     title: spotted towhee hat
 
 ---
@@ -88,7 +88,7 @@ images:
 
 <div class="row">
     {% for image in page.images %}
-      <div class="col-md-3 col-sm-3 col-xs-12">
+      <div class="col-md-3 col-sm-4 col-xs-12">
         <div class="gallery">
           <img class="gallery-image img-responsive" src="{{ image.image_path }}" alt="{{ image.title}}"/>
           <h4 class="gallery-title text-center">{{ image.title }}</h4>
