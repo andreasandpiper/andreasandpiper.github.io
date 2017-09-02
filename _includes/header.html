@@ -1,9 +1,9 @@
       <div class="row">
-        <div class="col-lg-12 col-sm-12"><h1 class="header center-block">The Hawk and Heron</h1></div>
+        <div class="col-lg-12 col-sm-12"><h1 class="header center-block animated slideInLeft">The Hawk and Heron</h1></div>
       </div>
       <div class="row">
           <div class="col-xs-12 col-sm-12 ">
-          <h3>American Birds, Handmade Crafts</h3>
+          <h3 class="animated slideInRight">American Birds, Handmade Crafts</h3>
         </div>
       </div>
 
@@ -62,7 +62,7 @@
               {% assign sorted_pages = site.pages | sort:"order" %}
               {% for my_page in sorted_pages %}
                 {% if my_page.title %}
-                <li class="nav-links"><a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
+                <li class="nav-links"><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
                 {% endif %}
               {% endfor %}
               <li class="nav-links"><a class="page-link" href="https://www.etsy.com/shop/thehawkandheron" target="_blank">Shop</a></li>
