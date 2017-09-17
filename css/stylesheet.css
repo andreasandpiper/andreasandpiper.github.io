@@ -15,7 +15,7 @@
     }
 
 body {
-  margin-top: 65px;
+  margin-top: 3%;
   font-family: 'Oswald';
   color: black;
   background-color: #ecece1;
@@ -71,6 +71,7 @@ h3 {
 }
 .nav {
   background-color: rgb(217, 217, 212);
+  height: 4.3em;
 }
 
 .list-inline {
@@ -102,6 +103,7 @@ a:focus {
   color:  #808b96;
   text-decoration: none;
 }
+
 
 .hats {
   display: flex;
