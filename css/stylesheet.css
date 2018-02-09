@@ -18,6 +18,9 @@ h3 {
   background-color: white;
   border: .313em solid black;
   border-radius: 5px;
+  /*padding-left: 0;
+  padding-right: 0;
+  padding-top: 2rem;*/
 }
 
 .header {
@@ -28,12 +31,9 @@ h3 {
   font-style: normal;
 }
 
-.front-page {
-  margin-top: 20px;
-}
 
 .page-top {
-  padding: 1em;
+  padding: 1rem;
   background-color: rgb(217, 217, 212, .6);
 }
 .page-title {
@@ -50,20 +50,16 @@ h3 {
 }
 
 .social-media-buttons {
-  width: 3.125em;
-  height: 3.125em;
-  margin: 1.25em;
-}
-.nav {
-  background-color: rgb(217, 217, 212);
+  width: 3.125rem;
+  height: 3.125rem;
+  margin: 1.25rem;
 }
 
-.list-inline {
-  margin: auto;
-
+.navbar-custom {
+  background-color: #d9d9d4;
 }
 
-.nav-links{
+/*.nav-item{
   font-size: 2em;
   margin: 0 1.25em;
   padding: .3em;
@@ -86,14 +82,14 @@ a:hover {
 a:focus {
   color:  #808b96;
   text-decoration: none;
-}
+}*/
 
 
-.hats {
+/*.hats {
   display: flex;
   height: 200px;
   width: 200px;
-}
+}*/
 
 
 a {
@@ -105,46 +101,36 @@ a {
 
 }
 
-.container-home {
-  margin: 1em 0em;
-  position: relative;
-}
-
-.home-image {
-  display: block;
-  height: auto;
-}
-
 .overlay {
   position: absolute;
-  bottom: 100%;
-  left: 0;
-  right: 0;
   background-color:  rgba(255,255,255,0.4);
   overflow: hidden;
-  width: 100%;
-  height:0;
   transition: .3s ease;
 }
 
 .container-home:hover .overlay {
   bottom: 0;
+  left: 2rem;
   height: 100%;
-
+  width: 92%;
 }
 
+.home-image {
+  padding: 1rem 0;
+}
 
 .text {
   font-family: 'Open Sans', sans-serif;
-  padding: .2em;
+  padding: .5rem;
+  margin-left: 1rem;
   color: #000;
-  font-size: 1.4em;
+  font-size: 1rem;
   background-color: rgba(255,255,255,0.5);
   position: absolute;
-  max-width: 15.7em;
+  max-width: 16.7rem;
   overflow: hidden;
-  transform: translate(2em, 4em);
-  -ms-transform: translate(3em, 4em);
+  transform: translate(2rem, 4rem);
+  -ms-transform: translate(3rem, 4rem);
   z-index: 5;
 }
 
@@ -162,9 +148,9 @@ a {
 
 
 .site-footer {
-  margin-top: 3em;
+  padding: 2em;
   font-size: 20px;
-  padding: 37px;
+  /*padding: 37px;*/
   background-color: rgb(217, 217, 212);
 }
 

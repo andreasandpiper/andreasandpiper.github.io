@@ -1,26 +1,26 @@
-      <div class="row">
-        <div class="col-lg-12 col-sm-12"><h1 class="header center-block animated slideInLeft">The Hawk and Heron</h1></div>
-      </div>
-      <div class="row">
-          <div class="col-xs-12 col-sm-12 ">
-          <h3 class="animated slideInRight">American Birds, Handmade Crafts</h3>
-        </div>
-      </div>
+<div class="row">
+  <div class="col-lg-12 col-sm-12"><h1 class="header center-block animated slideInLeft">The Hawk and Heron</h1></div>
+</div>
+<div class="row">
+    <div class="col-xs-12 col-sm-12 ">
+    <h3 class="animated slideInRight">American Birds, Handmade Crafts</h3>
+  </div>
+</div>
 
-      <div class="row">
-        <div class="col-xs-12">
-          <div class="social-media">
-            <a href="https://www.facebook.com/thehawkandheron" target="_blank">
-              <img src="/assets/facebook.png" alt="Facebook" class="social-media-buttons"/></a>
-            <a href="https://www.instagram.com/thehawkandheron/" target="_blank"/>
-              <img src="/assets/instagram.jpeg" alt="Instagram" class="social-media-buttons"/></a>
-            <a href="https://www.etsy.com/shop/thehawkandheron" target="_blank">
-              <img src="/assets/etsy.jpg" alt="Etsy" class="social-media-buttons"/></a>
-          </div>
-        </div>
-      </div>
+<div class="row">
+  <div class="col-xs-12">
+    <div class="social-media">
+      <a href="https://www.facebook.com/thehawkandheron" target="_blank">
+        <img src="/assets/facebook.png" alt="Facebook" class="social-media-buttons"/></a>
+      <a href="https://www.instagram.com/thehawkandheron/" target="_blank"/>
+        <img src="/assets/instagram.jpeg" alt="Instagram" class="social-media-buttons"/></a>
+      <a href="https://www.etsy.com/shop/thehawkandheron" target="_blank">
+        <img src="/assets/etsy.jpg" alt="Etsy" class="social-media-buttons"/></a>
+    </div>
+  </div>
+</div>
 
-      <div class="row nav">
+      <!-- <div class="row nav">
         <div class="col-xs-12 col-sm-12 center">
           <ul class= "list-inline text-center">
               {% assign sorted_pages = site.pages | sort:"order" %}
@@ -32,4 +32,45 @@
               <li class="nav-links"><a class="page-link" href="https://www.etsy.com/shop/thehawkandheron" target="_blank">Shop</a></li>
           </ul>
         </div>
-</div>
+      </div> -->
+        <!-- <nav class="navbar navbar-expand-lg">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navigationbar">
+            <ul class="navbar-nav mr-auto">
+              {% assign sorted_pages = site.pages | sort:"order" %}
+              {% for my_page in sorted_pages %}
+                {% if my_page.title %}
+                  <li class="nav-item">
+                    <a class="nav-item nav-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+                  </li>
+                {% endif %}
+              {% endfor %}
+                <li class="nav-item">
+                  <a class="nav-item nav-link" href="https://www.etsy.com/shop/thehawkandheron" target="_blank">Shop</a>
+                </li>
+              </ul>
+          </div>
+        </nav> -->
+
+<nav class="navbar navbar-expand-lg navbar-custom">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      {% assign sorted_pages = site.pages | sort:"order" %}
+      {% for my_page in sorted_pages %}
+        {% if my_page.title %}
+          <li class="nav-item">
+            <a class="nav-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
+      <li class="nav-item">
+        <a class="nav-item nav-link" href="https://www.etsy.com/shop/thehawkandheron" target="_blank">Shop</a>
+      </li>
+    </ul>
+  </div>
+</nav>
