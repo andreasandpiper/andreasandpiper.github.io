@@ -1,18 +1,36 @@
-
 body {
   margin-top: 3%;
   font-family: 'Oswald';
   color: black;
-  background-color: #ecece1;
-  background-image: url("data:image/svg+xml,%3Csvg width='44' height='12' viewBox='0 0 44 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 12v-2L0 0v10l4 2h16zm18 0l4-2V0L22 10v2h16zM20 0v8L4 0h16zm18 0L22 8V0h16z' fill='%234c7a7c' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+  background-image: url("/assets/background.png");
+  background-attachment: fixed;
 }
 
 h3 {
   font-family: 'Pacifico', cursive;
-  font-size: 2em;
+  font-size: 25px;
   font-weight: lighter;
   text-align: center;
 }
+
+a {
+  color:  black ;
+  text-decoration: none;
+
+}
+a:link {
+  color:  black ;
+}
+
+a:hover {
+  color: #808b96;
+}
+
+a:focus {
+  color:  #808b96;
+}
+
+/* --------------- Index Page --------------- */
 
 .container {
   background-color: white;
@@ -20,29 +38,17 @@ h3 {
   border-radius: 5px;
 }
 
+.front-page {
+  margin-top: 20px;
+}
+
+/* --------------- HEADER --------------- */
 .header {
   font-size: 5em;
   text-align: center;
   font-weight: bold;
   text-transform: uppercase;
   font-style: normal;
-}
-
-.front-page {
-  margin-top: 20px;
-}
-
-.page-top {
-  padding: 1em;
-  background-color: rgb(217, 217, 212, .6);
-}
-.page-title {
-  font-family: 'Pacifico', cursive;
-}
-
-.page-subtitle {
-  font-family: 'Open Sans', sans-serif;
-  list-style-type: none;
 }
 
 .social-media {
@@ -54,38 +60,37 @@ h3 {
   height: 3.125em;
   margin: 1.25em;
 }
+
 .nav {
   background-color: rgb(217, 217, 212);
 }
 
-.list-inline {
-  margin: auto;
-
+.nav ul{
+  font-size: 20px;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
 }
 
-.nav-links{
-  font-size: 2em;
-  margin: 0 1.25em;
-  padding: .3em;
-}
-
-a {
-  color:  black ;
-}
-a:link {
-  color:  black ;
-}
-
-a:hover {
-  color: #808b96;
+.nav li:last-child{
   text-decoration: none;
-
-
 }
 
-a:focus {
-  color:  #808b96;
-  text-decoration: none;
+
+/* --------------- PAGES --------------- */
+
+.page-top {
+  padding: 1em;
+  background-color: rgb(217, 217, 212, .6);
+}
+
+.page-title {
+  font-family: 'Pacifico', cursive;
+}
+
+.page-subtitle {
+  font-family: 'Open Sans', sans-serif;
+  list-style-type: none;
 }
 
 
@@ -95,14 +100,16 @@ a:focus {
   width: 200px;
 }
 
+.about {
+  padding: 1em 0;
 
-a {
-  text-decoration: none;
 }
 
-.gallery-title {
+#about-text {
   font-family: 'Open Sans', sans-serif;
-
+  font-size: 1.2em;
+  line-height: 2.15em;
+  text-indent: 3.125em;
 }
 
 .container-home {
@@ -133,7 +140,6 @@ a {
 
 }
 
-
 .text {
   font-family: 'Open Sans', sans-serif;
   padding: .2em;
@@ -146,18 +152,6 @@ a {
   transform: translate(2em, 4em);
   -ms-transform: translate(3em, 4em);
   z-index: 5;
-}
-
-.about {
-  padding: 1em 0;
-
-}
-
-#about-text {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.2em;
-  line-height: 2.15em;
-  text-indent: 3.125em;
 }
 
 
@@ -178,7 +172,11 @@ a {
   height: 12.9em;
 }
 
-.gallery-image {
+.gallery p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.gallery img {
   margin: auto;
   width: 14em;
   height: auto;
