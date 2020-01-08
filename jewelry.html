@@ -48,8 +48,8 @@ images:
   {% for image in page.images %}
     <div class="col-md-3 col-sm-3 col-xs-12">
       <div class="gallery">
-        <img class="gallery-image img-responsive" src="{{ image.image_path }}" alt="{{ image.title}}"/>
-        <h4 class="gallery-title text-center">{{ image.title }}</h4>
+        <img class="img-fluid" src="{{ image.image_path }}" alt="{{ image.title}}"/>
+        <p class="text-center">{{ image.title }}</p>
       </div>
     </div>
   {% endfor %}

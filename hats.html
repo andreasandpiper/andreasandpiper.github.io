@@ -11,9 +11,9 @@ images:
   - image_path: /assets/hats/5panel/olivehummingbird.JPG
     title: Hummingbird Camper
   - image_path: /assets/hats/5panel/peregrine5P.JPG
-    title: Peregrine Camper 
+    title: Peregrine Camper
   - image_path: /assets/hats/5panel/tankingfisher.JPG
-    title: Kingfisher Camper 
+    title: Kingfisher Camper
   - image_path: /assets/hats/trucker/pelican.png
     title: Pelican Trucker
   - image_path: /assets/hats/trucker/oystercatcher_t.jpeg
@@ -60,7 +60,7 @@ images:
     title: Junco Trucker
   - image_path: /assets/hats/trucker/tealPOtrucker.JPG
     title: Poison Oak Trucker
-    
+
 ---
 <div class="row page-top">
   <div class="col-md-12">
@@ -81,8 +81,8 @@ images:
     {% for image in page.images %}
       <div class="col-md-3 col-sm-4 col-xs-12">
         <div class="gallery">
-          <img class="gallery-image img-responsive" src="{{ image.image_path }}" alt="{{ image.title}}"/>
-          <h4 class="gallery-title text-center">{{ image.title }}</h4>
+          <img class="img-fluid" src="{{ image.image_path }}" alt="{{ image.title}}"/>
+          <p class="text-center">{{ image.title }}</p>
         </div>
     </div>
     {% endfor %}
