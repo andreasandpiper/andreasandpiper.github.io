@@ -26,7 +26,6 @@
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}"
   href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}"> {% if
   jekyll.environment == "production" %}
-  <!-- Google Analytics -->
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script
     async
@@ -41,5 +40,6 @@
 
     gtag("config", "UA-157433524-2");
   </script>
-  {% end %}
+
+  {% endif %}
 </head>
