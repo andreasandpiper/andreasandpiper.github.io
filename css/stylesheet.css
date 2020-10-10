@@ -149,9 +149,13 @@ a:focus {
 
 #about-text {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.2em;
-  line-height: 2.15em;
+  font-size: 1em;
+  line-height: 2em;
   text-indent: 3.125em;
+}
+
+#about-text > ul {
+  list-style-type: none;
 }
 
 .container-home {
